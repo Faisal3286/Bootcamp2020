@@ -27,7 +27,7 @@ jobs:
        node-version: 12 
 
     # Runs a set of commands using the runners shell
-    - name: installing surge  
+    - name: installing surge 
       run: npm install --global surge
-    - name: upload using surge
-      run: surge ./ Bootcamp2020.surge.sh --token ${{secrets.SURGE_TOKEN1}}
+    - name: deploying  surge
+      run: surge ./ deploy_Bootcamp2020.surge.sh --token ${{secrets.SURGE_TOKEN1}}
